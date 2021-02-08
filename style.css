@@ -62,6 +62,38 @@ header > h1 {
   margin: .5em 0;
 }
 
+nav {
+  background-color: #112;
+  color: #667;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li.courant {
+  color: #FFF;
+  background-color: #334;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5em 1em;
+  margin: .25em;
+}
+
 .body {
   width: 960px;
   margin: 0 auto;
@@ -91,21 +123,29 @@ article {
 }
 
 article::before {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 1em;
   border: 1px solid black;
   content: counter(no);
   counter-increment: no;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 2em;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
-  height: 1em;
+  height: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 1;
   text-align: center;
-  width: 1em;
+  width: 1.5em;
 }
 
 article.on > label::before {
